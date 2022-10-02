@@ -1,3 +1,7 @@
+
+//              doing this js file line by line coading system 
+
+
 document.getElementById('expense-calculate').addEventListener('click', function () {
     const foodCostElement = document.getElementById('food-cost');
     const rentCostElement = document.getElementById('rent-cost');
@@ -43,7 +47,7 @@ document.getElementById('save').addEventListener('click', function () {
     savingAmountElement.value = saveAmount;
 
     const balanceElement = document.getElementById('balance');
-    const balanceString = balanceElement.innerHTML;
+    const balanceString = balanceElement.innerText;
     const newBalance = parseInt(balanceString);
 
     const remainingBalance = newBalance - saveAmount;
